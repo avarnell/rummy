@@ -1,0 +1,18 @@
+{
+  "name": "rummy",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Andrew <avarnell@ago.org>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/avarnell/rummy",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

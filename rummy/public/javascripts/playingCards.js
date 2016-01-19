@@ -265,7 +265,4 @@ if (Array.indexOf === undefined) {
 
 })(this,this.document);
 
-var cardDeck = new playingCards(conf)
-
-
 
