@@ -1,7 +1,8 @@
 var rummy = angular.module('rummy', ['ngRoute'])
 
-.controller('homeCtrl', ['$scope' ,function($scope){
-  $scope.working = 'giddy-up'
+.controller('homeCtrl', ['$scope', function($scope){
+  $scope.working = 'giddy-up';
+
 }])
 
 
@@ -10,6 +11,10 @@ var rummy = angular.module('rummy', ['ngRoute'])
   .when('/', {
     templateUrl: '../partials/home.html',
     controller: 'homeCtrl'
+  })
+  .when('/game/:id', {
+    templateUrl : '../partials/game.html',
+    controller: 'gameCtrl'
   })
   $locationProvider.html5Mode(true);
 }
