@@ -6,8 +6,7 @@ var cards = require('cards')
 router.get('/', function(req, res, next) {
 
 
-  res.render('index', { title: 'Express', 
-    deck : deck
+  res.render('index', { title: 'Express'
   });
 });
 
@@ -16,5 +15,13 @@ router.get('/getDeck', function(req,res,next){
   deck.shuffleAll()
   res.json(deck)
 })
+
+
+router.get('*', function(req, res, next) {
+  res.sendFile('index.html', {
+    root: __dirname + '/../public'
+  })
+});
+
 
 module.exports = router;

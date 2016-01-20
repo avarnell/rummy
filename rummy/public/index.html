@@ -2,15 +2,23 @@
 <html ng-app='rummy'>
 <head>
   <title>Video Rummy</title>
+  
   <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+
   <script type="text/javascript" src='/javascripts/angular.min.js'></script>
   <script type="text/javascript" src='/javascripts/angular-route.min.js'></script>
 
-  <script type="text/javascript" src='/socket.io/socket.io.js'></script>
+  <script type="text/javascript" src='javascripts/app.js'></script>
+
+  <base href="/">
 
 </head>
-<body ng-view>
+<body>
+
+  <div ng-view>
+
+  </div>
 
 </body>
 </html>
